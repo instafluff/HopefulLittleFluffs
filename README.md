@@ -6,15 +6,15 @@ We built this Spotlight Website & Overlay for Fluffy Animals Looking for Loving 
 Special Thanks to CJ [CodingGarden](https://twitch.tv/CodingGarden) for the help with getting pet info from the Seattle Humane Society!
 
 ## Instafluff ##
+> *Like these projects? The best way to support my open-source projects is by becoming a Comfy Sponsor on GitHub!*
+
+> https://github.com/sponsors/instafluff
+
 > *Come and hang out with us at the Comfiest Corner on Twitch!*
 
 > https://twitch.tv/instafluff
 
 > https://twitter.com/instafluffTV
-
-> *Have these open-source projects helped you? Please consider becoming a Comfy Sponsor on GitHub!*
-
-> https://github.com/sponsors/instafluff
 
 ## Instructions ##
 
