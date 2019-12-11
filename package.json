@@ -1,0 +1,38 @@
+{
+  "name": "hopefullittlefluffs",
+  "version": "1.0.0",
+  "description": "Spotlight Overlay for Fluffy Animals Looking for Loving Homes at the Seattle Humane Society",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instafluff/HopefulLittleFluffs.git"
+  },
+  "keywords": [
+    "Instafluff",
+    "Animal",
+    "Rescue",
+    "Seattle",
+    "Humane",
+    "Society",
+    "Adopt",
+    "Fluffy",
+    "Small",
+    "Animals",
+    "Dogs",
+    "Cats",
+    "Love",
+    "Home"
+  ],
+  "author": "Instafluff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/instafluff/HopefulLittleFluffs/issues"
+  },
+  "homepage": "https://github.com/instafluff/HopefulLittleFluffs#readme",
+  "dependencies": {
+    "webwebweb": "^1.1.8"
+  }
+}

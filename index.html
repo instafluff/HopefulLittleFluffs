@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {
+        font-size: 6vw;
+      }
+      h1 {
+        text-shadow: -1px -1px 0 #000,
+      		1px -1px 0 #000,
+      		-1px 1px 0 #000,
+      		1px 1px 0 #000;
+      }
+    </style>
+    <title>Hopeful Little Fluffs - Spotlight for Fluffy Animals Looking for Loving Homes at the Seattle Humane Society</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="looking4love" class="card text-white bg-dark mb-3">
+        <div class="card-header text-center">❤️ #LookingForLove ❤️</div>
+        <div>
+          <img id="fluff-img" class="card-img" src="" alt="Pet Image">
+          <!-- <div style="margin-top: -77px; margin-left: 30px;">
+            <h1 id="fluff-name" class="card-title"></h1>
+          </div> -->
+        </div>
+        <div class="card-body">
+          <p id="fluff-breed" class="card-text"></p>
+          <h5 id="fluff-description" class="card-text"></h5>
+          <a id="fluff-link" href="#" target="_blank" class="btn btn-primary col-12">Adopt Me!</a>
+        </div>
+        <div class="card-footer">
+          <small id="fluff-footer" class="text-warning"></small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="web/helpers.js"></script>
+    <script src="web/seattlehumane.js"></script>
+    <script>
+      const params = new URLSearchParams( location.search );
+      $("#looking4love").hide();
+      async function selectRandomFluff() {
+        let type = Math.floor( Math.random() * 3 );
+        switch( params.get( "type" ) ) {
+          case "dogs":
+            type = 0;
+            break;
+          case "cats":
+            type = 1;
+            break;
+          case "small":
+            type = 2;
+            break;
+          default:
+            break;
+        }
+        let pet;
+        switch( type ) {
+          case 0: // dogs
+            pet = await getRandomFluffFromSeattleHumane( "dogs" );
+            break;
+          case 1: // cats
+            pet = await getRandomFluffFromSeattleHumane( "cats" );
+            break;
+          case 2: // small
+            pet = await getRandomFluffFromSeattleHumane( "small" );
+            break;
+        }
+        // console.log( pet );
+        $("#fluff-img").attr( "src", pet.image.replace( "https:https:", "https:" ) );
+        $("#fluff-name").text( pet.name );
+        // $("#fluff-description").text( pet.description );
+        $("#fluff-description").text( `${pet.gender}, ${pet.age}` );
+        $("#fluff-breed").text( `${pet.name} - ${pet.breed}` );
+        $("#fluff-link").attr( "href", `https://adopt.now.sh/${pet.animal_id}` );
+        $("#fluff-footer").text( `seattlehumane.org/pets/${pet.animal_id}` );
+        $("#looking4love").show();
+      }
+      if( params.get( "overlay" ) ) {
+        $("#fluff-link").hide();
+      }
+      selectRandomFluff();
+      setInterval( () => {
+        selectRandomFluff();
+      }, 180000 );
+    </script>
+  </body>
+</html>
