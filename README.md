@@ -3,6 +3,8 @@
 # HopefulLittleFluffs
 We built this Spotlight Website & Overlay for Fluffy Animals Looking for Loving Homes at the Seattle Humane Society live on Twitch for the Coding Cafe!
 
+Special Thanks to CJ [CodingGarden](https://twitch.tv/CodingGarden) for the help with getting pet info from the Seattle Humane Society!
+
 ## Instafluff ##
 > *Come and hang out with us at the Comfiest Corner on Twitch!*
 
