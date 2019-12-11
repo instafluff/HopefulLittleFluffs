@@ -27,10 +27,10 @@ https://www.instafluff.tv/HopefulLittleFluffs?overlay=true&channel=instafluff
 
 ```
 For example:
-https://www.instafluff.tv/HighlightOfMyChat?channel=instafluff&tts=true&voice=Amy&bottom=true
+https://www.instafluff.tv/HopefulLittleFluffs?overlay=true&channel=instafluff&type=cats
 ```
 
 ## Credits ##
 Thank you too all the participants of this project!
 
-****
+**Instafluff, That_MS_Gamer, Gilokk0, PhysoTronic, simrose4u, Linol_Shadowcat, wabes1, guthron, neniltheelf, ShinSharkai, hug3fan14, ruandersMSFT, Instafriend, holloway87, SoG_Cuicui, Typhoon22288, LilyHazel, Shaezonai, Seralius, atel0s, yellede, grallih, Ella_Fint, PDRastaNr1, sparky_pugwash, LevelUpLady, ummmheck, jellydance, Agent_Merlin, DutchGamer46, stuyksoft, SushiDay, efdn, TheWeirdOne, opti_21, MalForTheWin, codeaurora, Chibigirl24, jim___nasium, breadchan, Spationaute, billllllllal, CodingGarden, BungalowGlow, GlitterholicDreamz, lewdmelon, ecomath328, aj2017, wietlol, seniorkae, TheRealOutdoors, chiefqueef_88, Rlchibi, santoki444, atd285, Wasabi_Cheetah, SomaPills, TheHungerService, rockysenpai24, Goldenmustaches, C4TFive, eateren, SausageCam, david889, julieee22, soggycoffee, m00bt, Nordegraf, Nrwgn_VKNG, FuriousFur, PinataHero, AntiPixelated, DEAD_P1XL, stresstest, alexSwavely, malfunct, ShadowNeverSeen, FlavCreations, OG24com, FranC312, Adariousmist, cldubya, MaryJoStaebler, mrmikejr1, ReturnToDust, Maayainsane, BanzaiBaby, mcgeorgeofthejungle, gameguysatam1, VirtualAssistant, CJzone, Little_Bungorf**
