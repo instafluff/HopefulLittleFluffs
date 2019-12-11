@@ -12,6 +12,10 @@ Special Thanks to CJ [CodingGarden](https://twitch.tv/CodingGarden) for the help
 
 > https://twitter.com/instafluffTV
 
+> *Have these open-source projects helped you? Please consider becoming a Comfy Sponsor on GitHub!*
+
+> https://github.com/sponsors/instafluff
+
 ## Instructions ##
 
 Add this as a Browser Source (400x800 size) and replace `yourchannel` with your Twitch username!
