@@ -18,7 +18,7 @@ Special Thanks to CJ [CodingGarden](https://twitch.tv/CodingGarden) for the help
 
 ## Instructions ##
 
-Add this as a Browser Source (400x800 size) and replace `yourchannel` with your Twitch username!
+Add this as a Browser Source (400x800 size) and replace `yourchannel` with your Twitch username! It will auto-refresh with a different pet every 3 mins.
 
 [https://www.instafluff.tv/HopefulLittleFluffs?overlay=true&channel=yourchannel](https://www.instafluff.tv/HopefulLittleFluffs?overlay=true&channel=yourchannel)
 
