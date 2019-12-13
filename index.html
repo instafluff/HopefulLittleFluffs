@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135113520-1"></script>
     <script>
@@ -60,6 +60,7 @@
     <script>
       const params = new URLSearchParams( location.search );
       $("#looking4love").hide();
+      let nonce = "";
       async function selectRandomFluff() {
         let type = Math.floor( Math.random() * 3 );
         switch( params.get( "type" ) ) {
@@ -78,13 +79,13 @@
         let pet;
         switch( type ) {
           case 0: // dogs
-            pet = await getRandomFluffFromSeattleHumane( "dogs" );
+            pet = await getRandomFluffFromSeattleHumane( "dogs", nonce );
             break;
           case 1: // cats
-            pet = await getRandomFluffFromSeattleHumane( "cats" );
+            pet = await getRandomFluffFromSeattleHumane( "cats", nonce );
             break;
           case 2: // small
-            pet = await getRandomFluffFromSeattleHumane( "small" );
+            pet = await getRandomFluffFromSeattleHumane( "small", nonce );
             break;
         }
         // console.log( pet );
@@ -100,7 +101,13 @@
       if( params.get( "overlay" ) ) {
         $("#fluff-link").hide();
       }
-      selectRandomFluff();
+      fetch( "https://cors-anywhere.herokuapp.com/https://www.seattlehumane.org/pets/dogs/" )
+      .then( r => r.text() )
+      .then( html => {
+        let index = html.indexOf( `{"nonce":` );
+        nonce = html.substring( index ).split( `","ajaxurl"` )[ 0 ].replace( `{"nonce":"`, "" );
+        selectRandomFluff();
+      } );
       setInterval( () => {
         selectRandomFluff();
       }, 180000 );

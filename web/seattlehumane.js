@@ -1,6 +1,6 @@
-async function getRandomFluffFromSeattleHumane( species ) {
+async function getRandomFluffFromSeattleHumane( species, nonce ) {
   const data = {
-    nonce: "cca1b3544d",
+    nonce: nonce,
     action: "petpoint_show_pets",
     location: "",
     type: species,
