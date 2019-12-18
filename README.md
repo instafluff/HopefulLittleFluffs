@@ -14,8 +14,6 @@ Special Thanks to CJ [CodingGarden](https://twitch.tv/CodingGarden) for the help
 
 > https://twitch.tv/instafluff
 
-> https://twitter.com/instafluffTV
-
 ## Instructions ##
 
 Add this as a Browser Source (400x800 size) and replace `yourchannel` with your Twitch username! It will auto-refresh with a different pet every 3 mins.
